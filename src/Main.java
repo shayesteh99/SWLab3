@@ -10,16 +10,16 @@ public class Main {
             if (command.equals("exit")) {
                 return;
             }
-            if (command.equals("calc")) {
+            else if (command.equals("calc")) {
                 String exp = scanner.nextLine();
                 float result = Calculator.ComputeExpression(exp);
                 System.out.println(result);
             }
-            if (command.equals("date")) {
+            else if (command.equals("date")) {
                 String result = DateAndTime.getCurrentDate();
                 System.out.println(result);
             }
-            if (command.equals("time")) {
+            else if (command.equals("time")) {
                 String result = DateAndTime.getCurrentTime();
                 System.out.println(result);
             }
