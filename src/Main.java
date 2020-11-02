@@ -23,6 +23,10 @@ public class Main {
                 String result = DateAndTime.getCurrentTime();
                 System.out.println(result);
             }
+            else if (command.equals("random")) {
+                float result = Calculator.generateRandom();
+                System.out.println(result);
+            }
             else {
                 System.out.println("Wrong command!");
             }

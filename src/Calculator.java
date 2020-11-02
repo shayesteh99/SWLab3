@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Calculator {
     public static float ComputeExpression(String exp) {
         String args[] = exp.split(" ");
@@ -18,5 +20,10 @@ public class Calculator {
             return first / second;
         }
         return 0;
+    }
+
+    public static float generateRandom() {
+        Random random = new Random();
+        return random.nextFloat();
     }
 }
