@@ -33,13 +33,20 @@ public class Main {
                 String s = scanner.nextLine();
                 clipboard.addToClipboard(s);
             }
-            else if (command.equals("checkin")) {
+            else if (command.equals("checkContains")) {
                 String s = scanner.nextLine();
                 boolean result = clipboard.checkInClipboard(s);
                 if (result)
                     System.out.println("Yes");
                 else
                     System.out.println("NO");
+            }
+            else if (command.equals("remove")) {
+                String s = scanner.nextLine();
+                clipboard.removeFromClipboard(s);
+            }
+            else if (command.equals("reset")) {
+                clipboard.resetClipboard();
             }
             else {
                 System.out.println("Wrong command!");

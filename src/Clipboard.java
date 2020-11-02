@@ -15,4 +15,12 @@ public class Clipboard {
         return this.strings.contains(string);
     }
 
+    public void removeFromClipboard(String string) {
+        this.strings.remove(string);
+    }
+
+    public void resetClipboard() {
+        this.strings.clear();
+    }
+
 }
