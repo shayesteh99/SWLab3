@@ -1,3 +1,4 @@
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Main {
@@ -12,6 +13,10 @@ public class Main {
             if (command.equals("calc")) {
                 String exp = scanner.nextLine();
                 float result = Calculator.ComputeExpression(exp);
+                System.out.println(result);
+            }
+            if (command.equals("date")) {
+                String result = DateAndTime.getCurrentDate();
                 System.out.println(result);
             }
             else {
