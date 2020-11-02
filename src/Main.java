@@ -6,10 +6,16 @@ public class Main {
             System.out.println("Enter your command:\n");
             Scanner scanner = new Scanner(System.in);
             String command = scanner.nextLine();
+            if (command.equals("exit")) {
+                return;
+            }
             if (command.equals("calc")) {
                 String exp = scanner.nextLine();
                 float result = Calculator.ComputeExpression(exp);
                 System.out.println(result);
+            }
+            else {
+                System.out.println("Wrong command!");
             }
         }
     }
