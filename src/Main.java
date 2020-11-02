@@ -19,6 +19,10 @@ public class Main {
                 String result = DateAndTime.getCurrentDate();
                 System.out.println(result);
             }
+            if (command.equals("time")) {
+                String result = DateAndTime.getCurrentTime();
+                System.out.println(result);
+            }
             else {
                 System.out.println("Wrong command!");
             }
