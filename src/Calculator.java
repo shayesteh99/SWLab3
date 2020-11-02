@@ -13,6 +13,8 @@ public class Calculator {
             return first * second;
         }
         if (args[1].equals("/")) {
+            if (Math.abs(second) < 0.00001)
+                return 0;
             return first / second;
         }
         return 0;
