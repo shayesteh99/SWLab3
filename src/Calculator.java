@@ -6,6 +6,15 @@ public class Calculator {
         if (args[1].equals("+")) {
             return first + second;
         }
+        if (args[1].equals("-")) {
+            return first - second;
+        }
+        if (args[1].equals("*")) {
+            return first * second;
+        }
+        if (args[1].equals("/")) {
+            return first / second;
+        }
         return 0;
     }
 }
